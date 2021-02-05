@@ -1,5 +1,24 @@
 \documentclass{article}
+\usepackage{graphicx}
+\usepackage{url}
 \usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+
+\renewcommand{\labelitemi}{$\Box$}
+\renewcommand{\labelitemi}{$\star$}
+\renewcommand{\labelenumi}{\theenumi}
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
 
 \title{IN6103 Assignment 1 - Creating the Enterprise Model}
 \author{peter }
@@ -10,7 +29,7 @@
 \maketitle
 
 \section{IN6103 Enterprise Application Modelling – Assignment 1}
-
+\includegraphics[]{sampleofdrawio.png}
 Team Members:
 \begin{itemize}
     \item Peter C939393
@@ -30,4 +49,8 @@ A UML class diagram describing our enterprise model.
     \item Create the UML class diagram to model the enterprise solution relationships: You can use Visio or http://Draw.io
 • Describe in detail the relationship of each element used in the model
 \end{itemize}
+
+\input{RequirementsDocument}
+\input{Reflection on our Work Practices}
+
 \end{document}
